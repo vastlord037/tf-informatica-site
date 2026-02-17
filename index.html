@@ -1,155 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TF Informática</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    /* Reset básico */
-    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif; }
-    body { background-color: #000; color: #f0f0f0; }
-
-    /* Navbar */
-    nav {
-      display:flex; justify-content:space-between; align-items:center;
-      background-color:#111; padding:15px 50px; position:sticky; top:0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
-    }
-    nav a { color:#fff; text-decoration:none; margin-left:20px; font-weight:500; }
-    .logo { font-size:1.8rem; font-weight:700; color:#1e3a5f; }
-
-    /* Botão WhatsApp */
-    .btn-wpp {
-      display:inline-block;
-      background-color:#25D366;
-      color:#fff;
-      padding:18px 36px;
-      border-radius:12px;
-      font-size:1.2rem;
-      font-weight:700;
-      text-decoration:none;
-      transition: 0.3s;
-    }
-    .btn-wpp:hover { background-color:#1ebe57; transform:scale(1.05); }
-
-    /* Hero */
-    .hero {
-      display:flex; flex-direction:column; align-items:center; text-align:center;
-      padding:80px 20px; background: radial-gradient(circle at top left, #1e3a5f33, #000);
-    }
-    .hero img { width:300px; border-radius:20px; margin-bottom:30px; }
-    .hero h1 { font-size:2.8rem; margin-bottom:20px; color:#1e3a5f; }
-    .hero p { font-size:1.2rem; margin-bottom:30px; line-height:1.5; color:#ccc; }
-
-    /* Seção de serviços */
-    .services {
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-      gap:30px;
-      padding:80px 50px;
-      background-color:#111;
-    }
-    .service {
-      background:#1a1a1a;
-      padding:30px; border-radius:20px;
-      text-align:center;
-      transition:0.3s;
-    }
-    .service:hover { transform:translateY(-5px); box-shadow:0 6px 15px rgba(0,0,0,0.5); }
-    .service h3 { margin-bottom:15px; color:#1e3a5f; }
-    .service p { color:#ccc; }
-
-    /* Depoimentos */
-    .testimonials {
-      padding:80px 50px; background-color:#000;
-    }
-    .testimonials h2 { text-align:center; margin-bottom:40px; color:#1e3a5f; }
-    .testimonial-list { display:flex; flex-wrap:wrap; gap:30px; justify-content:center; }
-    .testimonial {
-      background:#1a1a1a; padding:25px; border-radius:20px; width:300px;
-      box-shadow:0 4px 10px rgba(0,0,0,0.5);
-    }
-    .testimonial h4 { margin-bottom:10px; color:#fff; }
-    .testimonial p { color:#ccc; font-size:0.95rem; }
-
-    /* Footer */
-    footer {
-      background:#111; color:#888; text-align:center; padding:40px 20px;
-      border-top:1px solid #333;
-    }
-    footer a { color:#1e3a5f; text-decoration:none; margin:0 10px; }
-
-    @media(max-width:768px){
-      .hero h1 { font-size:2rem; }
-      .hero img { width:80%; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conserto de Celular e Computador em Piracicaba</title>
+    <meta name="description" content="Conserto de celular e computador em Piracicaba. Troca de tela, bateria, formatação e manutenção. Orçamento rápido pelo WhatsApp.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #111;
+            color: white;
+            padding: 40px 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .container {
+            padding: 30px 20px;
+        }
+        .services {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .services li {
+            margin-bottom: 10px;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 25px;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .whatsapp-btn:hover {
+            background-color: #1ebe5d;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #111;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">TF Informática</div>
-    <div>
-      <a href="#services">Serviços</a>
-      <a href="#testimonials">Depoimentos</a>
-      <a href="https://wa.me/5519993073098" class="btn-wpp">Fale Conosco</a>
-    </div>
-  </nav>
+<header>
+    <h1>Conserto de Celular e Computador em Piracicaba</h1>
+    <p>Serviço local de reparo e manutenção.<br>Orçamento rápido pelo WhatsApp.</p>
+</header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <img src="https://i.postimg.cc/J0F7RPcV/logotipo.png" alt="Logotipo TF Informática">
-    <h1>Seu PC e Celular funcionando como novo!</h1>
-    <p>Conserto, manutenção e venda de peças de informática e eletrônicos com preço justo e atendimento rápido.</p>
-    <a href="https://wa.me/5519993073098" class="btn-wpp">Fale pelo WhatsApp</a>
-  </section>
+<div class="container">
 
-  <!-- Serviços -->
-  <section class="services" id="services">
-    <div class="service">
-      <h3>Conserto de PCs e Eletrônicos</h3>
-      <p>Diagnóstico e reparo rápido para que você volte a usar seu computador sem problemas.</p>
-    </div>
-    <div class="service">
-      <h3>Manutenção Preventiva</h3>
-      <p>Evite problemas futuros com manutenções regulares e otimize o desempenho do seu computador.</p>
-    </div>
-    <div class="service">
-      <h3>Venda de Peças</h3>
-      <p>Oferecemos peças de informática de alta qualidade com preços acessíveis.</p>
-    </div>
-  </section>
+    <h2>Serviços</h2>
 
-  <!-- Depoimentos -->
-  <section class="testimonials" id="testimonials">
-    <h2>O que nossos clientes dizem</h2>
-    <div class="testimonial-list">
-      <div class="testimonial">
-        <h4>Cliente Satisfeito</h4>
-        <p>Excelente atendimento, recomendo!</p>
-      </div>
-      <div class="testimonial">
-        <h4>Cliente Satisfeito</h4>
-        <p>Consertaram meu computador no mesmo dia. Muito bom!</p>
-      </div>
-      <div class="testimonial">
-        <h4>Cliente Satisfeito</h4>
-        <p>Peças de qualidade e preço justo. Voltarei sempre!</p>
-      </div>
-    </div>
-  </section>
+    <ul class="services">
+        <li>✔ Troca de tela</li>
+        <li>✔ Troca de bateria</li>
+        <li>✔ Celular que não liga</li>
+        <li>✔ Formatação de notebook</li>
+        <li>✔ Upgrade SSD</li>
+        <li>✔ Limpeza e manutenção de computador</li>
+    </ul>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2024 TF Informática. Todos os direitos reservados.</p>
-    <p>
-      <a href="https://wa.me/5519993073098">WhatsApp</a> |
-      <a href="#">Facebook</a> |
-      <a href="#">Instagram</a>
+    <a class="whatsapp-btn" href="https://wa.me/5519993073098?text=Olá,%20vim%20pelo%20Google%20e%20preciso%20de%20orçamento" target="_blank">
+        Solicitar Orçamento pelo WhatsApp
+    </a>
+
+    <p style="margin-top:20px;">
+        Atendimento em Piracicaba – SP.<br>
+        Orçamento sem compromisso.
     </p>
-  </footer>
+
+</div>
+
+<footer>
+    TF Informática – Conserto de Celulares e Computadores<br>
+    Piracicaba – SP<br>
+    WhatsApp: (19) 99307-3098
+</footer>
 
 </body>
 </html>
